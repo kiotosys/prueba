@@ -5,7 +5,9 @@ body{background-color: antiquewhite;}
     margin: 30px auto;
 }
 header h1{
+    margin-top: 0;
     text-align: center;
+    font-family: 'forte', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 nav {
     background-color: #5f9ea0; 
@@ -28,11 +30,38 @@ section{
     flex-flow: wrap column; 
     background-color: white; 
     border: 1px solid orchid;
+    background-position: center;
 }
 section figure {
-    width: 77%; margin-top: 10px; margin-bottom: 10px;
+    width: 77%; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    background-position: center;
 }
 section figure img {
-    width: 100%;    margin: 10px auto 10px auto;
+    width: 100%;
+    height: 50vh;   
+    margin: 10px auto 10px auto;
+    background-size: cover;
 }
-footer {text-align: center;}
+
+section figure img:hover{
+    border-radius: 20px;
+    background-color: red;
+    opacity: 0.75;
+    background-image: url('img/banner3.jpg');
+}
+
+footer {
+    background-color: burlywood;
+    text-align: center;
+    padding: 10px;
+}
+
+#banner {
+    width: 100%;
+    height: 25vh;
+    background-image: url('img/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+}

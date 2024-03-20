@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/estilos.css" rel="stylesheet">
+    <script src="js/funcionesjs.js"></script>
 </head>
-<body>
+<body onload="pedirNombre();">
     <div id="contenedorprincipal">
         <header>
             <h1><strong>Obispo Castro, Luz Vannessa Paula</strong></h1>
-            <img src="img/banner.jpg" width="100%">
+            <div id="banner" onmouseover="cambiarImagen('img/banner2.jpg')" onmouseout="cambiarImagen('img/banner1.jpg')">
+                <!--
+                <img src="img/banner1.jpg" width="100%">
+                -->
+            </div>
         </header>
         <nav>
             <ul>
@@ -32,13 +37,14 @@
             <section>
                 <figure width="77%">
                     <img src="img/imagen2.jpg">
+                    <div id="bienvenido"></div>
                 </figure>
             </section>
         </main>
         <footer>
             <p>Desarrollado por <strong>Luz Vannessa Paula Obispo Castro</strong></p>
-            <img src="img/manito.png" width="30" height="40">
-            <img src="img/play.png" width="30" height="40">
+            <img src="img/manito.png" width="35" height="30">
+            <img src="img/play.png" width="35" height="30">
         </footer>
     </div>
 </body>
